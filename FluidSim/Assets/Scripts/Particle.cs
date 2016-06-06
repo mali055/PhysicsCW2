@@ -15,7 +15,7 @@ public class Particle : MonoBehaviour {
 		vFieldY = velFieldY;
 		width = w;
 		height = h;
-		Destroy(gameObject, lifeTime);
+		//Destroy(gameObject, lifeTime);
 	}
 
 	void Update() {
@@ -24,7 +24,7 @@ public class Particle : MonoBehaviour {
 		float posY = pos.z;
 		// destroy if not on grid
 		if (posX < 2 || posX > (width - 2) || posY < 2 || posY > (height - 2)) {
-			Destroy(gameObject);
+			//Destroy(gameObject);
 			return;
 		}
 		// move
